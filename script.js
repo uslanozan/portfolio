@@ -139,6 +139,8 @@ const footerText = document.getElementById('terminal-text');
 const messages = [
     "analyzing_network_traffic...",
     "training_ai_model...",
+    "building_systems...",
+    "designing_ui...",
     "updating_dependencies...",
     "visitor_detected...",
     "waiting_for_input..."
