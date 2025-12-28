@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ozan Uslan | Computer Engineer & Security Researcher</title>
+    <meta name="description" content="Personal portfolio of Ozan Uslan..." />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Montserrat:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <canvas id="matrixCanvas"></canvas>
+    <div class="overlay"></div>
+
+    <div class="container">
+      <header>
+        <div
+          class="lang-switch-container"
+          style="text-align: center; margin-bottom: 1rem"
+        >
+          <span class="cmd">> SYSTEM_LANG: </span>
+          <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+          <span class="separator">/</span>
+          <button class="lang-btn active" onclick="setLanguage('tr')">
+            TR
+          </button>
+        </div>
+
+        <div class="glitch-wrapper">
+          <h1 class="glitch" data-text="OZAN USLAN">OZAN USLAN</h1>
+        </div>
+
+        <div class="status-line" style="margin-bottom: 1rem;">
+          <span class="blinking-cursor">_</span> STATUS:
+          <span class="highlight">BUILDING SYSTEMS</span> | LOC:
+          <span class="highlight">TR_MUĞLA</span> | COMP:
+          <span class="highlight">IROTECH AR-GE</span>
+        </div>
+
+        <p class="subtitle" data-lang="subtitle"></p>
+
+        <div class="social-links">
+          <a href="https://github.com/uslanozan" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://linkedin.com/in/uslanozan" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+
+          <a href="https://medium.com/@uslanozan" target="_blank"
+            ><i class="fab fa-medium"></i
+          ></a>
+        </div>
+      </header>
+
+      <section class="bio-box">
+        <div class="terminal-bar">
+          <div class="dots"><span></span><span></span><span></span></div>
+          <div class="bar-title">root@ozan:~</div>
+        </div>
+        <div class="bio-content">
+          <p>> <span class="cmd">exec bio.sh</span></p>
+          <p class="output" data-lang="bio_text"></p>
+        </div>
+      </section>
+
+      <section class="system-logs">
+        <h3
+          class="section-header"
+          style="text-align: left; font-size: 1rem; margin-bottom: 1rem"
+        >
+          <span class="cmd">cat /var/log/work_experience.log</span>
+        </h3>
+        <div class="log-container">
+          <div class="log-entry">
+            <span class="timestamp">[CURRENT]</span>
+            <span class="proc">LOG [INFO]:</span>
+            <span class="msg" data-lang="log_irotech"></span>
+          </div>
+
+          <div class="log-entry">
+            <span class="timestamp">[2025-07]</span>
+            <span class="proc">LOG [INFO]:</span>
+            <span class="msg" data-lang="log_sagel"></span>
+          </div>
+
+          <div class="log-entry">
+            <span class="timestamp">[2025-04]</span>
+            <span class="proc">LOG [INFO]:</span>
+            <span class="msg" data-lang="log_sca"></span>
+          </div>
+
+          <div class="log-entry">
+            <span class="timestamp">[2024-09]</span>
+            <span class="proc">LOG [INFO]:</span>
+            <span class="msg" data-lang="log_threatmon"></span>
+          </div>
+
+          <div class="log-entry">
+            <span class="timestamp">[2024-07]</span>
+            <span class="proc">LOG [INFO]:</span>
+            <span class="msg" data-lang="log_getsoft"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-section">
+        <h3 class="section-header">
+          <span class="bracket">[</span> INSTALLED_MODULES
+          <span class="bracket">]</span>
+        </h3>
+        <div class="skill-category">
+          <div class="category-name">>> LANGUAGES</div>
+          <div class="skill-grid">
+            <span class="skill-chip ai">GO</span>
+            <span class="skill-chip ai">DART</span>
+            <span class="skill-chip ai">JAVA</span>
+            <span class="skill-chip ai">PYTHON</span>
+            <span class="skill-chip ai">SQL</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="category-name">>> FRAMEWORKS & CORE</div>
+          <div class="skill-grid">
+            <span class="skill-chip ai">FLUTTER</span>
+            <span class="skill-chip ai">GO_FIBER</span>
+            <span class="skill-chip ai">DOCKER</span>
+            <span class="skill-chip ai">GIT</span>
+            <span class="skill-chip ai">LINUX</span>
+            <span class="skill-chip ai">MYSQL</span>
+            <span class="skill-chip ai">ANDROID</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="category-name">>> SECURITY & AI</div>
+          <div class="skill-grid">
+            <span class="skill-chip ai">CTI_ANALYSIS</span>
+            <span class="skill-chip ai">NETWORK_SEC</span>
+            <span class="skill-chip ai">LLM_INTEGRATION</span>
+            <span class="skill-chip ai">MULTI_AGENTS</span>
+            <span class="skill-chip ai">OSINT</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects">
+        <h2 class="section-header">
+          <span class="bracket">[</span> ACTIVE_DEVELOPMENT
+          <span class="bracket">]</span>
+        </h2>
+        <div class="grid">
+          <div class="card glass major-card">
+            <div class="card-top">
+              <i class="fas fa-shield-virus icon-main"></i>
+              <span class="status private">PRIVATE SUITE</span>
+            </div>
+            <h3>BITSAFE-AI ECOSYSTEM</h3>
+            <p data-lang="proj_bitsafe_desc"></p>
+            <div class="modules-list">
+              <span><i class="fas fa-check"></i> Core</span>
+              <span><i class="fas fa-check"></i> ML Models</span>
+              <span><i class="fas fa-check"></i> Frontend/Backend</span>
+              <span><i class="fas fa-check"></i> Relational Database</span>
+              <span><i class="fas fa-check"></i> OSINT Service</span>
+              <span><i class="fas fa-check"></i> Report Generator</span>
+            </div>
+            <div class="tags">
+              <span>Go</span>
+              <span>TypeScript</span>
+              <span>React JS</span>
+              <span>Python</span>
+              <span>Machine Learning</span>
+              <span>Postgre SQL</span>
+              <span>Ollama</span>
+            </div>
+          </div>
+
+          <div class="card glass major-card">
+            <div class="card-top">
+              <i class="fas fa-robot icon-main"></i>
+              <span class="status warning">V1.0 BETA</span>
+            </div>
+            <h3>GOLLAMA-THE-ORCHESTRATOR</h3>
+            <p data-lang="proj_gollama_desc"></p>
+            <div class="tags">
+              <span>Go</span>
+              <span>Ollama</span>
+              <span>Multi-Agent</span>
+              <span>Microservice</span>
+              <span>MySQL</span>
+              <span>Qdrant</span>
+              <span>Prompt Engineering</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects">
+        <h2 class="section-header" style="margin-top: 4rem">
+          <span class="bracket">[</span> OPEN_SOURCE_&_TOOLS
+          <span class="bracket">]</span>
+        </h2>
+        <div class="grid">
+          <div class="card glass">
+            <div class="card-top">
+              <i class="fas fa-fighter-jet icon-main"></i>
+              <a
+                href="https://github.com/uslanozan/kamikaze"
+                target="_blank"
+                class="link-arrow"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+            <h3>KAMIKAZE</h3>
+            <p data-lang="proj_kamikaze_desc"></p>
+            <div class="tags">
+              <span>Go</span>
+              <span>Security</span>
+              <span>Recon</span>
+            </div>
+          </div>
+
+          <div class="card glass">
+            <div class="card-top">
+              <i class="fas fa-leaf icon-main"></i>
+              <a
+                href="https://github.com/uslanozan/EcoMarket"
+                target="_blank"
+                class="link-arrow"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+            <h3>ECOMARKET</h3>
+            <p data-lang="proj_ecomarket_desc"></p>
+            <div class="tags">
+              <span>Flutter</span>
+              <span>Dart</span>
+              <span>LLM</span>
+              <span>Gemini API</span>
+            </div>
+          </div>
+
+          <div class="card glass">
+            <div class="card-top">
+              <i class="fas fa-map-marked-alt icon-main"></i>
+              <a
+                href="https://github.com/uslanozan/Smart-Route-Navigator"
+                target="_blank"
+                class="link-arrow"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+            <h3>SMART ROUTE NAV</h3>
+            <p data-lang="proj_smartroute_desc"></p>
+            <div class="tags">
+              <span>Python</span>
+              <span>Algorithms</span>
+              <span>GIS</span>
+            </div>
+          </div>
+
+          <div class="card glass">
+            <div class="card-top">
+              <i class="fas fa-heart icon-main" style="color: #ff5f56"></i>
+              <a
+                href="https://github.com/uslanozan/minima"
+                target="_blank"
+                class="link-arrow"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+            <h3>MINIMA</h3>
+            <p data-lang="proj_minima_desc"></p>
+            <div class="tags">
+              <span>Dart</span>
+              <span>Flutter</span>
+              <span>Youtube API</span>
+              <span>Spotify API</span>
+              <span>Clean Architecture</span>
+            </div>
+          </div>
+
+          <div class="card glass">
+            <div class="card-top">
+              <i class="fas fa-layer-group icon-main"></i>
+              <a
+                href="https://github.com/uslanozan/Dejaview-CENG3522"
+                target="_blank"
+                class="link-arrow"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+            <h3>DEJAVIEW CLUSTERING</h3>
+            <p data-lang="proj_dejaview_desc"></p>
+            <div class="tags">
+              <span>Python</span>
+              <span>Jupyter</span>
+              <span>Machine Learning</span>
+              <span>Clustering</span>
+            </div>
+          </div>
+
+          <div class="card glass">
+            <div class="card-top">
+              <i class="fas fa-network-wired icon-main"></i>
+              <a
+                href="https://github.com/uslanozan/Mininet-Ryu-SE3506"
+                target="_blank"
+                class="link-arrow"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+            <h3>FLOW ME MAYBE</h3>
+            <p data-lang="proj_sdn_desc"></p>
+            <div class="tags">
+            <span>Python</span>
+              <span>Mininet</span>
+              <span>Ryu</span>
+              <span>DASH</span>
+              <span>Load Balancing</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="archive-section">
+        <h3 class="archive-header">// ARCHIVED_EXPERIMENTS</h3>
+        <div class="archive-list">
+          <div class="archive-item">
+            <span class="cmd">> ./omnidle_hackathon</span>
+            <span class="desc">BTK Hackathon Project (Java)</span>
+            <a
+              href="https://github.com/uslanozan/Omnidle"
+              target="_blank"
+              class="status warning"
+              >VIEW</a
+            >
+          </div>
+          <div class="archive-item">
+            <span class="cmd">> ./logger_microservice</span>
+            <span class="desc">Plugin-based Log System (Python)</span>
+            <a
+              href="https://github.com/uslanozan/System-Logger-Microservice"
+              target="_blank"
+              class="status warning"
+              >VIEW</a
+            >
+          </div>
+          <div class="archive-item">
+            <span class="cmd">> ./pet_tracker_blockchain</span>
+            <span class="desc">Pet Tracking System on Blockchain (JS)</span>
+            <a
+              href="https://github.com/uslanozan/Pet-Tracking-System"
+              target="_blank"
+              class="status warning"
+              >VIEW</a
+            >
+          </div>
+          <div class="archive-item view-all">
+            <span class="cmd">> git remote -v</span>
+            <span class="desc" data-lang="archive_view_all"></span>
+            <a
+              href="https://github.com/uslanozan?tab=repositories"
+              target="_blank"
+              class="status highlight"
+              >GITHUB_PROFILE</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="hardware-config">
+        <h3
+          class="section-header"
+          style="text-align: left; font-size: 1rem; margin-bottom: 1rem"
+        >
+          <span class="cmd">cat ~/.config/persona.json</span>
+        </h3>
+        <div class="code-block">
+<pre>
+<span class="json-bracket">{</span>
+  <span class="json-key">"entity"</span>: <span class="json-string">"Ozan Uslan"</span>,
+  <span class="json-key">"role"</span>: <span class="json-string">"Architect of Chaos"</span>,
+  <span class="json-key">"respect_to"</span>: <span class="json-string">"Yasir Uslan"</span>,
+  <span class="json-key">"created_at"</span>: <span class="json-string">"2003-04-01 00:00:00"</span>,
+  <span class="json-key">"fuel_source"</span>: <span class="json-string">"Caffeine & Chaos"</span>,
+  <span class="json-key">"vibe_check"</span>: <span class="json-string">"Modern Glam Rock"</span>,
+  <span class="json-key">"addictions"</span>: <span class="json-bracket">[</span>
+    <span class="json-string">"Adding comment line"</span>,
+    <span class="json-string">"Dark Mode"</span>,
+    <span class="json-string">"Buying domains I won't use"</span>,
+    <span class="json-string">"Rainbow Six Siege"</span>
+  <span class="json-bracket">]</span>,
+  <span class="json-key">"security_status"</span>: <span class="json-string">"Paranoid"</span>,
+  <span class="json-key">"known_bugs"</span>: <span class="json-bracket">{</span>
+    <span class="json-key">"sleep_schedule"</span>: <span class="json-string">"404 Not Found"</span>,
+    <span class="json-key">"stubbornness"</span>: <span class="json-boolean">true</span>
+  <span class="json-bracket">}</span>,
+  <span class="json-key">"hate_ratios"</span>: <span class="json-bracket">{</span>
+    <span class="json-key">"python"</span>: <span class="json-number">100</span>,
+    <span class="json-key">"javascript"</span>: <span class="json-number">100</span>,
+    <span class="json-key">"metal_music"</span>: <span class="json-number">82</span>
+  <span class="json-bracket">}</span>,
+  <span class="json-key">"superpower"</span>: <span class="json-string">"Can read matrix code"</span>
+<span class="json-bracket">}</span>
+</pre>
+        </div>
+      </section>
+
+      <section class="contact-module">
+        <div class="decrypt-box">
+          <div class="lock-icon">
+            <i class="fas fa-lock"></i> ENCRYPTED_CONNECTION
+          </div>
+          <div class="hash-display" id="emailDisplay">
+            0x7C9A2B4F81...[LOCKED]
+          </div>
+          <button class="decrypt-btn" onclick="decryptEmail()">
+            <i class="fas fa-terminal"></i> DECRYPT_EMAIL
+          </button>
+        </div>
+      </section>
+
+      <footer class="terminal-footer">
+        <div id="terminal-text">
+          visitor@ozan-server:~$ <span class="blinking-cursor">|</span>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
